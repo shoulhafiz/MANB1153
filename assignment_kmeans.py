@@ -53,6 +53,12 @@ plt.xlabel('Annual Income (k$)')
 plt.ylabel('Spending Score (1-100)')
 plt.legend()
 plt.show()
+
+#To csv
+dataset_new = dataset.copy()
+dataset_new['target']=y_kmeans
+dataset_new.to_csv(path_or_buf='Mall_Customer_label.csv', sep=',')
+
     
 
     
